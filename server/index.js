@@ -167,7 +167,7 @@ app.use(function (err, req, res, next) {
 
 server.listen(config.port, function () {
   console.log('listening on port %s', config.port)
-  downgrade()
+//  downgrade()
 })
 
 function error (err) {
