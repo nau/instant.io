@@ -165,8 +165,11 @@ app.use(function (err, req, res, next) {
   })
 })
 
-server.listen(config.port, function () {
-  console.log('listening on port %s', config.port)
+var port = process.env.PORT || 8080;
+
+
+server.listen(port, function () {
+  console.log('listening on port %s', port)
 //  downgrade()
 })
 
